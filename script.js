@@ -1,4 +1,5 @@
 var endpoint_url="http://requestb.in/s32nbgs3";
+var response;
 
 var bar=$('<div id="toolbar_top"></div>').prependTo('body');
 $('#toolbar_top').css({
@@ -29,5 +30,10 @@ function httpGet(input_url)
 function summarize(){
 var url=document.URL;
 var prepare=endpoint_url+'?request_type='+'summarize'+'&request_url='+url;
-httpGet(prepare);
+response=httpGet(prepare);
+if(response)
+{
+var popup_window=window.open("","Summarize Results","width=300,height=200");
+popup_window.document.write(response);
+}
 }
