@@ -1,4 +1,7 @@
-var endpoint_url="http://requestb.in/1ekibv71";
+
+/*
+ * CONTEXT MENU OPTION
+ * 
 // The onClicked callback function.
 function onClickHandler(info, tab) {
 window_title=tab.title;
@@ -27,3 +30,4 @@ function summarize(url){
 var prepare=endpoint_url+'?url='+url+'&request='+'summarize';
 httpGet(prepare);
 }
+*/
